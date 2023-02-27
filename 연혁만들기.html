@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {list-style: none;}
+
+        body {padding: 50px;}
+
+        .spacer {height: 50px;}
+
+
+
+        .his {
+            width: 1000px;
+            border: 1px solid #ccc;
+        }
+
+        .his li {
+            border: 1px solid #f00;
+        }
+
+
+        /* Type 01 */
+
+        .his1 li {
+            padding-left: 300px;
+            position: relative;
+            min-height: 30px; /* 기준크기는 연도 글자 크기 */
+        }
+
+        .his1 li .date {
+            position: absolute;
+            left: 0; top: 0;
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        /* Type 02 */
+
+
+        .his2 li {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .his2 li .date {
+            flex: none;
+            width: 300px;
+            font-size: 40px;
+            line-height: 1;
+        }
+
+        /* Type 03 */
+
+        .his3 li::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .his3 li span {
+            float: left;
+        }
+
+        .his3 li .date {
+            width: 30%;
+        }
+
+        .his3 li .txt {
+            width: 70%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="his his1">
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio itaque autem! Non ut sequi aperiam consequatur debitis ducimus quasi temporibus, velit incidunt aliquid possimus corporis quibusdam in eligendi animi?
+            </span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+    </ul>
+    <div class="spacer"></div>
+
+    <ul class="his his2">
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+    </ul>
+    <div class="spacer"></div>
+
+
+    <ul class="his his3">
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+        <li>
+            <span class="date">2022</span>
+            <span class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab neque eaque velit ducimus eligendi modi ut eum libero dicta consectetur reiciendis quaerat harum, repellendus inventore! Provident pariatur officia est!</span>
+        </li>
+
+    </ul>
+    <div class="spacer"></div>
+</body>
+</html>

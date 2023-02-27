@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid #000;
+            color: #f00;
+            font-size: 20px;
+            line-height: 1.5;
+            width: 500px;
+            padding: 5px;
+        }
+
+        .box1 {
+            white-space: normal; /* wrap */
+        }
+
+        .box2 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;/* 줄임표시 생성 --- 1줄 */
+        }
+
+        .box3 {
+            text-align: justify;
+            max-height: 90px;
+            overflow: hidden;
+        }
+
+        .box4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo doloremque adipisci illum excepturi soluta perferendis quidem molestiae laboriosam laborum mollitia, facere sed debitis nulla! Dolorum nemo itaque molestiae quia?
+    Nobis ab dignissimos, perferendis eveniet itaque iusto deleniti quisquam pariatur porro, fuga accusamus temporibus recusandae. Aut minima sunt mollitia doloribus ex. Ducimus dolor commodi, doloribus neque qui maiores ea accusantium!
+    Reprehenderit, assumenda dolore aperiam voluptatem asperiores quaerat in quam minima! Autem, fuga! Facilis eaque vero eum, repellat laudantium nesciunt distinctio debitis necessitatibus inventore ex quas enim rem, hic recusandae voluptatibus.</div>
+
+    <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt sit laboriosam debitis natus esse libero, inventore laborum vitae quibusdam, ullam quam! Suscipit voluptatum dolorum vero assumenda officia, soluta voluptatem.
+    Accusamus voluptas, reprehenderit minima excepturi inventore temporibus aperiam nam dolores dicta quia dolor tempore error illo omnis iusto vel ex ipsum, eveniet expedita corrupti! Placeat fuga nihil ex vitae voluptatibus.
+    Sit maxime expedita quos corporis autem ad ipsam porro nisi? Repellendus recusandae cum fugit repudiandae adipisci? Illum officia, quasi saepe esse perferendis, molestiae fugiat, debitis mollitia quis sapiente minima id!</div>
+
+    <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt sit laboriosam debitis natus esse libero, inventore laborum vitae quibusdam, ullam quam! Suscipit voluptatum dolorum vero assumenda officia, soluta voluptatem.
+    Accusamus voluptas, reprehenderit minima excepturi inventore temporibus aperiam nam dolores dicta quia dolor tempore error illo omnis iusto vel ex ipsum, eveniet expedita corrupti! Placeat fuga nihil ex vitae voluptatibus.
+    Sit maxime expedita quos corporis autem ad ipsam porro nisi? Repellendus recusandae cum fugit repudiandae adipisci? Illum officia, quasi saepe esse perferendis, molestiae fugiat, debitis mollitia quis sapiente minima id!</div>
+
+    <div class="box box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt sit laboriosam debitis natus esse libero, inventore laborum vitae quibusdam, ullam quam! Suscipit voluptatum dolorum vero assumenda officia, soluta voluptatem.
+    Accusamus voluptas, reprehenderit minima excepturi inventore temporibus aperiam nam dolores dicta quia dolor tempore error illo omnis iusto vel ex ipsum, eveniet expedita corrupti! Placeat fuga nihil ex vitae voluptatibus.
+    Sit maxime expedita quos corporis autem ad ipsam porro nisi? Repellendus recusandae cum fugit repudiandae adipisci? Illum officia, quasi saepe esse perferendis, molestiae fugiat, debitis mollitia quis sapiente minima id!</div>
+</body>
+</html>
